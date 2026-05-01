@@ -3,6 +3,7 @@ import Card from "./Components/Card";
 import { Bookmark } from "lucide-react";
 import Section1 from './Components/Section1/Section1'
 import Note from "./Components/Notes_apk/Note";
+import Gallery from "./Components/Gallery_Project/Gallery";
 function App() {
   // This is for card componets prctice
   // const jobOpenings = [
@@ -182,7 +183,8 @@ function App() {
   // );
 
   return (
-    <Note/>
+    // <Note/>
+    <Gallery/>
   )
 }
 
