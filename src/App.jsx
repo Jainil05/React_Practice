@@ -1,9 +1,14 @@
 import "./App.css";
 import Card from "./Components/Card";
 import { Bookmark } from "lucide-react";
-import Section1 from './Components/Section1/Section1'
+import Section1 from "./Components/Section1/Section1";
 import Note from "./Components/Notes_apk/Note";
 import Gallery from "./Components/Gallery_Project/Gallery";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Navbar from "./Components/Routers/Navbar";
 function App() {
   // This is for card componets prctice
   // const jobOpenings = [
@@ -140,10 +145,9 @@ function App() {
   //     </div>
   //   </>
   // );
-  
 
-  // This is the ui layout Practice 
-  // This data is for ui layout practice 
+  // This is the ui layout Practice
+  // This data is for ui layout practice
   // const users = [
   //   {
   //     img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -183,9 +187,22 @@ function App() {
   // );
 
   return (
+    // This is for Notes Project
     // <Note/>
-    <Gallery/>
-  )
+
+    // This is for Gallery Project
+    // <Gallery/>
+
+    // Routes Practices
+    <div className="">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
