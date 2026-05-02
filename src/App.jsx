@@ -9,6 +9,14 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Navbar from "./Components/Routers/Navbar";
+import Notfound from "./Pages/Notfound";
+import Product from "./Pages/Product";
+import Men from "./Pages/Men";
+import Women from "./Pages/Women";
+import Child from "./Pages/Child";
+import Courses from "./Pages/Courses";
+import CoursesDetails from "./Pages/CoursesDetails";
+import Navbar2 from "./Components/Routers/Navbar2";
 function App() {
   // This is for card componets prctice
   // const jobOpenings = [
@@ -196,10 +204,22 @@ function App() {
     // Routes Practices
     <div className="">
       <Navbar />
+      <Navbar2/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* We use '*' for any other route which is we don't have(For Not Found Pages) */}
+        <Route path="*" element={<Notfound/>} />
+        {/* Nested Routing */}
+        <Route path="/product" element={<Product/>}>
+          <Route path="men" element={<Men/>} />
+          <Route path="women" element={<Women/>} />
+          <Route path="child" element={<Child/>} />
+        </Route>
+        <Route path="/courses" element={<Courses/>} />
+        <Route path="/courses/:id" element={<CoursesDetails/>} />
       </Routes>
     </div>
   );
