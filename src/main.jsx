@@ -3,9 +3,13 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
+import Themecontext from "./Context/Themecontext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+
+  <BrowserRouter>   {/* This is for Routing  */}
+  <Themecontext>    {/* This is for Context api */}
     <App />
-  </BrowserRouter>,
+  </Themecontext>
+  </BrowserRouter>
 );

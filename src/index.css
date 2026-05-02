@@ -135,3 +135,10 @@ for card component practice
   color: #8b8b8b;
 
 }    */
+
+.light{
+  background-color: oklch(91.7% 0.08 205.041);
+}
+.dark{
+  background-color: oklch(38.453% 0.06481 207.022);
+}
