@@ -1,16 +1,51 @@
-# React + Vite
+# React Practice - Learning Projects
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📚 Overview
+A collection of React projects built while learning from [Sheryians Coding School](link)
 
-Currently, two official plugins are available:
+## 🎯 Projects Included
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1️⃣ UI Design Project
+- **Description**: Responsive components with Tailwind CSS
+- **Features**: Component-based architecture, responsive design
+- **Technologies**: React, Tailwind CSS
+- **Live Demo**: [Link] | **Code**: [Folder]
 
-## React Compiler
+### 2️⃣ Notes App
+- **Description**: Full-featured note-taking application
+- **Features**: Create, Read, Update, Delete notes, LocalStorage persistence
+- **Technologies**: React Hooks (useState), LocalStorage API
+- **Live Demo**: [Link] | **Code**: [Folder]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3️⃣ Gallery App
+- **Description**: Dynamic image gallery with API integration
+- **Features**: Fetch images from API, dynamic rendering, filtering
+- **Technologies**: React, useEffect, API Integration, Axios/Fetch API
+- **Live Demo**: [Link] | **Code**: [Folder]
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
+- React (Hooks, Context API, Router DOM)
+- Vite
+- Tailwind CSS
+- JavaScript ES6+
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 How to Run
+\`\`\`bash
+npm install
+npm run dev
+\`\`\`
+
+## 📖 What I Learned
+✅ React Fundamentals (JSX, Props, State)
+✅ React Hooks (useState, useEffect, useContext)
+✅ Routing with React Router DOM
+✅ API Integration & Data Fetching
+✅ LocalStorage & Form Handling
+✅ Styling with CSS & Tailwind CSS
+
+## 🎓 Course Credit
+Completed: ReactJS Full Course - Sheryians Coding School
+Instructor: Sarthak Sharma
+
+## 📧 Connect
+- LinkedIn: https://www.linkedin.com/in/jainil-pidhadiya-09332725b/
